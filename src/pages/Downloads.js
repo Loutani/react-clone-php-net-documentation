@@ -1,6 +1,8 @@
 const Downloads = () => {
     return (
-        <div>Downloads Page</div>
+        <>
+            
+        </>
     )
 }
 
