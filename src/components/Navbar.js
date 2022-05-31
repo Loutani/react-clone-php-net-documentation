@@ -33,7 +33,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <NavLink to='currentVersion'>
-                            <img src={currentVersionImage} />
+                            <img src={currentVersionImage} alt="current version php" />
                         </NavLink>
                     </li>
                 </ul>

@@ -61,7 +61,6 @@ const Downloads = () => {
                         </ul>
                         <a href="#gpg-8.0">GPG Keys for PHP 8.0</a>
                     </div>
-                    <a id="v7"></a>
                     <h3 id="v7.4.29" className="title">
                         <span className="release-state">Old Stable</span>
                         PHP 7.4.29    (<a href="/ChangeLog-7.php#7.4.29" className="changelog">Changelog</a>)
