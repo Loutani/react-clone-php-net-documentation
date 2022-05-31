@@ -13,9 +13,6 @@ html {
 
 body {
     line-height: 1.5rem;
-}
-
-body * {
     font-family: "Fira Sans";
     font-weight: 400;
 }
@@ -43,6 +40,11 @@ a:link, a:visited {
 h1, h2, h3, h4, h5, h6 {
     color: #333;
     line-height: 3rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 h3 {
@@ -164,6 +166,15 @@ nav.navbar-fixed-top {
     float: none;
     padding: 0.75rem;
     display: inline-block;
+}
+
+.navbar .nav > .active > a {
+    box-shadow: inset 0 3px 8px rgb(0 0 0 / 13%);
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover, .navbar .nav .active > a:focus {
+    color: #fff;
+    background-color: #4F5B93;
 }
 
 .navbar .nav > li > a > img {
@@ -407,7 +418,7 @@ footer .footmenu li {
 }
 
 /*
-
+    TO TOP BUTTON
 */
 #toTop {
     text-decoration: none;
@@ -430,4 +441,46 @@ footer .footmenu li {
 #toTop img {
     width: 40px;
     height: 40px;
+}
+
+/*
+    DOWNLOADS PAGE
+*/
+.content-box .releasedate {
+    float: right;
+    font-size: 0.9rem;
+}
+
+.content-box .md5sum, .content-box .sha256 {
+    display: block;
+    font: normal 0.875rem/1.5rem "Fira Mono", "Source Code Pro", monospace;
+}
+
+hr {
+    margin: 1.5rem 0;
+    border: 0;
+    height: 0;
+    border-top: 0.25rem solid #99c;
+}
+
+header.title, h1:after, h2:after, h3:after {
+    display: table;
+    width: 100%;
+    content: " ";
+    margin-top: -1px;
+    border-bottom: 1px dotted;
+}
+
+.content-box pre {
+    background: white;
+    border: solid 1px rgb(214, 214, 214);
+    margin: 0px;
+    padding: 0.75rem;
+    overflow: auto;
+    font: normal 0.875rem/1.5rem "Source Code Pro", monospace;
+    white-space: pre-wrap;
+}
+
+.content-box.downloads {
+    margin: 0 0 2.25rem;
 }
