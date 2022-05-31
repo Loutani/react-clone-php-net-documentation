@@ -4,9 +4,9 @@ const Footer = () => {
     return (
         <>
         <footer>
-            <div class="container footer-content">
-                <div class="row-fluid">
-                    <ul class="footmenu">
+            <div className="container footer-content">
+                <div className="row-fluid">
+                    <ul className="footmenu">
                         <li><Link to='copyright'>Copyright © 2001-2022 The PHP Group</Link></li>
                         <li><Link to='my'>My PHP.net</Link></li>
                         <li><Link to='contact'>Contact</Link></li>
