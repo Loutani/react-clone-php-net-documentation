@@ -8,6 +8,7 @@ import './fonts/Fira/FiraMono-Regular.woff';
 import './fonts/Fira/FiraSans-Book.woff';
 import './fonts/Fira/FiraSans-BookItalic.woff';
 import './fonts/Fira/FiraSans-Medium.woff';
+import './icon_arrow.svg';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

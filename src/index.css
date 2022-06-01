@@ -12,8 +12,9 @@ html {
 }
 
 body {
+    font-size: 1rem;
     line-height: 1.5rem;
-    font-family: "Fira Sans";
+    font-family: "Fira Sans", "Source Sans Pro", Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
@@ -467,7 +468,7 @@ hr {
     border-top: 0.25rem solid #99c;
 }
 
-header.title, h1:after, h2:after, h3:after {
+header.title, h1:after, h2:not(.php8-h2):after, h3:not(.php8-h3):after {
     display: table;
     width: 100%;
     content: " ";
@@ -538,4 +539,334 @@ table.standard td, table.standard th {
 
 table.standard tr:nth-child(even) td {
     background-color: #E6E6E6;
+}
+
+/*
+    CURRENT VERSION PAGE
+*/
+
+.php8-section_header {
+    position: relative;
+    padding-top: 64px;
+    margin-top: -1.5rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.php8-section_dark {
+    background-color: #4F5B93;
+    color: #fff;
+}
+
+.php8-section {
+    padding: 96px 1.5rem;
+    margin: 0 -1.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.php8-section_header {
+    position: relative;
+    padding-top: 64px;
+    margin-top: -1.5rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.page-tools {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    text-align: right;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.php8-section_dark * {
+    color: #fff;
+}
+
+.change-language {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+#changelang {
+    border: 0;
+}
+
+.change-language label {
+    display: inline-block;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+
+.page-tools #changelang-langs, .page-tools .edit-bug {
+    font-size: .75rem;
+}
+
+.change-language select, .change-language option {
+    padding: 4px 5px;
+    color: rgba(39, 40, 44, 0.7);
+    line-height: 1.33;
+}
+
+.change-language select {
+    min-width: 178px;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+
+.php8-section_header .php8-section__content {
+    width: 1050px;
+}
+
+.php8-section__content {
+    width: 820px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.php8-logo {
+    vertical-align: middle;
+}
+
+.php8-logo img {
+    max-width: 90%;
+}
+
+.php8-title {
+    margin-top: 16px;
+    font-size: 60px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: -1.5px;
+}
+
+.php8-subtitle {
+    margin-top: 48px;
+    font-size: 28px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.php8-button-wrapper {
+    margin-top: 48px;
+}
+
+.layout-content .php8-section_dark a:link, .layout-content .php8-section_dark a:visited {
+    color: #fff;
+    transition: opacity 0.2s;
+}
+
+.php8-button {
+    display: inline-block;
+    padding: 16px 46px;
+    border-radius: 30px;
+    border: none;
+    background-color: #4F5B93;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.php8-button_light {
+    background-color: #fff !important;
+    color: #27282c !important;
+}
+
+.layout-content .php8-section_dark a:hover, .layout-content .php8-section_dark a:focus {
+    color: #fff;
+    border-color: #fff;
+    opacity: 0.85;
+}
+
+.php8-h2 {
+    display: inline-block;
+    font-size: 31px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: -0.5px;
+    color: #27282c;
+    overflow: visible;
+}
+
+.php8-rfc {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+    vertical-align: middle;
+    color: #505c90;
+    border-bottom-color: currentColor;
+}
+
+.php8-compare__main {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.php8-compare__block {
+    position: relative;
+    flex-basis: calc((100% - 68px)/2);
+    text-align: left;
+}
+
+.php8-compare__label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 16px 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(39, 40, 44, 0.7);
+    background-color: rgba(39, 40, 44, 0.05);
+}
+
+#usernotes .note .text, .example-contents > [class$="code"], .example-contents.screen, .informalexample .literallayout {
+    background-color: #FFF;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 15%);
+    border-radius: 0 0 2px 2px;
+}
+
+.php8-code {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 40px 38px !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+}
+
+.phpcode, div.classsynopsis {
+    text-align: left;
+}
+
+code, pre.info, .docs .classsynopsis, .docs .classsynopsis code {
+    font: normal 0.875rem/1.5rem "Fira Mono", "Source Code Pro", monospace;
+    word-wrap: break-word;
+}
+
+.phpcode span.html {
+    color: black;
+    background-color: transparent;
+}
+
+div.phpcode span.default {
+    color: #369;
+    background-color: transparent;
+}
+
+div.phpcode span.keyword {
+    color: #693;
+    background-color: transparent;
+}
+
+div.phpcode span.string {
+    color: #c33;
+    background-color: transparent;
+}
+
+.php8-compare__arrow {
+    height: 36px;
+    width: 20px;
+    margin: auto;
+    background: url(./icon_arrow.svg) scroll no-repeat center center / contain transparent;
+}
+
+.php8-compare__content {
+    display: inline-block;
+    max-width: 820px;
+    margin-top: 24px;
+    text-align: left;
+}
+
+.php8-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.php8-section_light {
+    background-color: #fff;
+}
+
+.php8-column {
+    flex-basis: calc((100% - 68px)/2);
+}
+
+strong {
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.php8-chart__table {
+    margin: 16px 0;
+}
+
+.php8-section img {
+    max-width: 100%;
+}
+
+.php8-compare__content ul li {
+    line-height: 3rem;
+}
+
+.php8-compare__content code {
+    color: rgba(39, 40, 44, 0.7);
+    background-color: rgba(39, 40, 44, 0.05);
+    padding: 0.2em 0.4em;
+    font-size: 85%;
+    border-radius: 6px;
+}
+
+.php8-section_footer {
+    margin-bottom: -1.5rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.php8-footer__content {
+    margin-top: 64px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+}
+
+.php8-section_dark .php8-h2 {
+    display: block;
+    color: #fff;
 }
